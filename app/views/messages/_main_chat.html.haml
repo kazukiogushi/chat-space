@@ -1,0 +1,40 @@
+.chat-main
+  .group-info
+    .group-info__left-item
+      .group-info__left-item__group
+        test
+      .group-info__left-item__member
+        Member :
+        kazuki
+    .group-info__right-item
+      .group-info__right-item__edit
+        = link_to "#", class: "group-info__right-item__edit__link" do
+          Edit
+  .message-list
+    .message-box
+      .message
+        .message__info
+          .message__info__name
+            kazuki
+          .message__info__date
+            2020/06/06(Sat) 14:49:45
+        .message__content
+          kkk
+      .message
+        .message__info
+          .message__info__name
+            kazuki
+          .message__info__date
+            2020/06/06(Sat) 14:49:48
+        .message__content
+          kkkk
+  .message-form
+    .new-message
+      %form{:action => "#",:class => "form" , :method => "post"}
+        .input-box
+          %input{:type => "text", :class => "text", :placeholder => "  type a message"}
+          %label.file
+            %i.far.fa-image
+            %input{:type => "file", :class => "image"}/
+        .submit-box
+          %input{:type => "submit", :class => "send", :value => "Send"}/
