@@ -4,23 +4,15 @@
       .header-box__name
         = current_user.name
       .header-box__icon
-        = link_to "#", class: "header-box__icon--btns" do
+        = link_to new_group_path, class: "header-box__icon--btns" do
           %i.fa.fa-edit
         = link_to edit_user_path(current_user), class: "header-box__icon--btns" do
           %i.fa.fa-cog
   .side-groups
-    .group
-      .group__name
-        techcamp
-      .group__text
-        まだメッセージはありません
-    .group
-      .group__name
-        techcamp
-      .group__text
-        まだメッセージはありません
-    .group
-      .group__name
-        techcamp
-      .group__text
-        まだメッセージはありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to edit_group_path(group), class: "group-link" do
+          .group-link__name
+            = group.name
+          .group-link__text
+            メッセージはまだありません。

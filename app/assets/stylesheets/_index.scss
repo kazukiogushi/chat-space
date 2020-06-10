@@ -37,13 +37,17 @@
     .group {
       height: 85px;
       color: #ffffff;
-      &__name {
-        font-size: 15px;
-      }
-      &__text {
-        margin-top: 5px;
-        margin-bottom: 40px;
-        font-size: 11px;
+      .group-link {
+        color: #ffffff;
+        text-decoration: none;
+        &__name {
+          font-size: 15px;
+        }
+        &__text {
+          margin-top: 5px;
+          margin-bottom: 40px;
+          font-size: 11px;
+        }
       }
     }
   }

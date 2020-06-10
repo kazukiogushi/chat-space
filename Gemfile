@@ -58,3 +58,5 @@ gem 'haml-rails'
 gem 'font-awesome-sass'
 # deviseの導入
 gem 'devise'
+
+gem 'pry-rails'
