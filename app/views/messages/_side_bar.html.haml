@@ -11,8 +11,8 @@
   .side-groups
     - current_user.groups.each do |group|
       .group
-        = link_to edit_group_path(group), class: "group-link" do
+        = link_to group_messages_path(group), class: "group-link" do
           .group-link__name
             = group.name
           .group-link__text
-            メッセージはまだありません。
+            = group.show_last_message
