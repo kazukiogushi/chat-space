@@ -131,48 +131,77 @@
     height: 90px;
     padding: 20px 40px;
     background-color: #d2d2d2d2;
-    .new-message {
-      height: 50px;
-      .form {
-        display: flex;
-        justify-content: space-between;
-        height: 50px;
-        .input-box {
-          display: flex;
-          position: relative;
-          width: calc(100% - 115px);
-          height: 100%;
-          input.text {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: none;
-          }
-          .file {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 22.3px;
-            cursor: pointer;
-            input.image {
-              display: none;
-            }
-            }
+    .new_message {
+      display: flex;
+      .form__mask {
+        position: relative;
+        width: 100%;
+        .form__message {
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          color: #434a54;
+          border-style: none;
         }
-        .submit-box {
-          width: 100px;
-          height: 100%;
-          background-color: #38aef0;
-          input.send {
-            width: 100%;
-            height: 100%;
-            padding: 0 30px;
-            background-color: #38aef0;
-            color: white;
-            cursor: pointer;
+        .form__mask__image {
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          .icon {
+            display: inline-block;
+            font-size: inherit;
+          }
+          .hidden {
+            display: none;
           }
         }
       }
+      .form__submit {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+      }
     }
+        // .input-box {
+        //   display: flex;
+        //   position: relative;
+        //   width: calc(100% - 115px);
+        //   height: 100%;
+        //   input.text {
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     border: none;
+        //   }
+        //   .file {
+        //     position: absolute;
+        //     top: 10px;
+        //     right: 10px;
+        //     font-size: 22.3px;
+        //     cursor: pointer;
+        //     input.image {
+        //       display: none;
+        //     }
+        //     }
+        // }
+        // .submit-box {
+        //   width: 100px;
+        //   height: 100%;
+        //   background-color: #38aef0;
+        //   input.send {
+        //     width: 100%;
+        //     height: 100%;
+        //     padding: 0 30px;
+        //     background-color: #38aef0;
+        //     color: white;
+        //     cursor: pointer;
+        //   }
+        // }
   }
 }
