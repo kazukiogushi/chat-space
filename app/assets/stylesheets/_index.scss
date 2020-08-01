@@ -57,7 +57,6 @@
 
 .chat-main {
   width: calc(100% - 300px);
-  height: 100wh;
   .group-info {
     display: flex;
     justify-content: space-between;
@@ -97,14 +96,14 @@
       }
     }
   }
-  .message-list {
-    height: calc(100vh - 190px);
-    background-color: #fafafa;
     .message-box {
+      height: calc(100vh - 190px);
+      background-color: #fafafa;
       padding-top: 46px;
       padding-left: 40px;
+      overflow: scroll;
       .message {
-        margin-bottom: 40px;
+        padding-bottom: 40px;
         &__info {
           display: flex;
           margin-bottom: 10px;
@@ -126,7 +125,6 @@
         }
       }
     }
-  }
   .message-form {
     height: 90px;
     padding: 20px 40px;

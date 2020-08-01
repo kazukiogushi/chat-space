@@ -11,9 +11,8 @@
       .group-info__right-item__edit
         = link_to edit_group_path(@group), class: "group-info__right-item__edit__link" do
           Edit
-  .message-list
-    .message-box
-      = render @messages
+  .message-box
+    = render @messages
   .message-form
     = form_for [@group, @message] do |f|
       .form__mask
