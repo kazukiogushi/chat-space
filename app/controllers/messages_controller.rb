@@ -7,7 +7,8 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = @group.messages.new(message_params)
+    @message = @group.messages.create(message_params)
+    logger.debug @message.errors.inspect
     if @message.save!
       respond_to do |format|
         format.json
